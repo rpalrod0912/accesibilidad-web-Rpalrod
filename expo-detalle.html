@@ -136,25 +136,31 @@
             </p>
 
             <table class="table table-light">
-              <tr class="bg-verde-oscuro">
-                <td colspan="2">Obra mostrada en esta página</td>
-              </tr>
-              <tr>
-                <td>Título</td>
-                <td>Las Bailarinas</td>
-              </tr>
-              <tr>
-                <td>Artista</td>
-                <td>Edgar Degas</td>
-              </tr>
-              <tr>
-                <td>Técnica</td>
-                <td>Pastel y carboncillo sobre papel</td>
-              </tr>
-              <tr>
-                <td>Dimensiones</td>
-                <td>71.1 x 59.1 cm</td>
-              </tr>
+              <thead>
+                <tr class="bg-verde-oscuro">
+                  <td colspan="2">Obra mostrada en esta página</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Título</td>
+                  <td>Las Bailarinas</td>
+                </tr>
+                <tr>
+                  <td>Artista</td>
+                  <td>Edgar Degas</td>
+                </tr>
+                <tr>
+                  <td>Técnica</td>
+                  <td>Pastel y carboncillo sobre papel</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Dimensiones</td>
+                  <td>71.1 x 59.1 cm</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -186,8 +192,12 @@
             />
           </div>
           <div class="form-group form-check">
-            <label for="checboxId1"></label>
-            <input id="cheboxId1" type="checkbox" class="form-check-input" />
+            <label for="inputCheckbox"></label>
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="inputCheckbox"
+            />
             <p>Acepto la <a href="#">Política de privacidad </a></p>
           </div>
           <button type="submit" class="btn btn-secondary">Registrarme</button>
