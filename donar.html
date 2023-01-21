@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Donar · La Galería Ecléctica</title>
@@ -23,7 +24,7 @@
         </div>
       </div>
       <a href="index.html">
-        <img src="assets/img/logo.png" />
+        <img src="assets/img/logo.png" alt="La Galeria del arte" />
       </a>
       <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button
@@ -88,27 +89,29 @@
               <h3>Cantidad del donativo (EUR)</h3>
 
               <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="unaVez"
-                  id="unaVez"
-                  value="option1"
-                  checked
-                />
                 <label class="form-check-label" for="unaVez">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="unaVez"
+                    id="unaVez"
+                    value="option1"
+                    checked
+                  />
                   Una única vez
                 </label>
               </div>
               <div class="form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="mensual"
-                  id="mensual"
-                  value="option2"
-                />
-                <label class="form-check-label" for="mensual"> Mensual </label>
+                <label class="form-check-label" for="mensual">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="mensual"
+                    id="mensual"
+                    value="option2"
+                  />
+                  Mensual
+                </label>
               </div>
               <div class="form-group">
                 <label for="exampleFormControlSelect2">Importe</label>
@@ -126,8 +129,9 @@
                 </select>
               </div>
               <div class="form-group">
-                <label>Otra cantidad</label>
+                <label for="otraCantidad">Otra cantidad</label>
                 <input
+                  id="otraCantidad"
                   type="password"
                   class="form-control"
                   placeholder="Escriba otro importe"
@@ -136,8 +140,9 @@
               <hr />
               <h3>Datos de facturación</h3>
               <div class="form-group">
-                <label>Email</label>
+                <label for="mail">Email</label>
                 <input
+                  id="mail"
                   type="email"
                   class="form-control"
                   placeholder="Escribe tu email"
@@ -147,16 +152,18 @@
                 >
               </div>
               <div class="form-group">
-                <label>Nombre </label>
+                <label for="name">Nombre </label>
                 <input
+                  id="name"
                   type="text"
                   class="form-control"
                   placeholder="Escribe tu nombre "
                 />
               </div>
               <div class="form-group">
-                <label>Apellidos </label>
+                <label for="apellidos">Apellidos </label>
                 <input
+                  id="apellidos"
                   type="text"
                   class="form-control"
                   placeholder="Tu apellidos"
@@ -164,8 +171,9 @@
               </div>
 
               <div class="form-group">
-                <label>Dirección postal </label>
+                <label for="postal">Dirección postal </label>
                 <input
+                  id="postal"
                   type="text"
                   class="form-control"
                   placeholder="Tu dirección postal"
@@ -176,8 +184,13 @@
               </div>
 
               <div class="form-group">
-                <label>Teléfono </label>
-                <input type="tel" class="form-control" placeholder="Teléfono" />
+                <label for="telefono">Teléfono </label>
+                <input
+                  id="telefono"
+                  type="tel"
+                  class="form-control"
+                  placeholder="Teléfono"
+                />
                 <small class="form-text text-muted"
                   >Nunca compartiremos su teléfono con nadie más.</small
                 >
@@ -185,20 +198,31 @@
               <hr />
               <h3>Datos de pago</h3>
               <div class="form-group">
-                <label>Número tarjeta</label>
+                <label for="numTarjeta">Número tarjeta</label>
                 <input
+                  id="numTarjeta"
                   type="number"
                   class="form-control"
                   placeholder="Número de tarjeta"
                 />
               </div>
               <div class="form-group">
-                <label>Data de expiración</label>
-                <input type="text" class="form-control" placeholder="MM/AA" />
+                <label for="expiracionData">Data de expiración</label>
+                <input
+                  id="expiracionData"
+                  type="text"
+                  class="form-control"
+                  placeholder="MM/AA"
+                />
               </div>
               <div class="form-group">
-                <label>Código de verificación</label>
-                <input type="number" class="form-control" placeholder="CCV" />
+                <label for="codigoVerificacion">Código de verificación</label>
+                <input
+                  id="codigoVerificacion"
+                  type="number"
+                  class="form-control"
+                  placeholder="CCV"
+                />
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" />
@@ -207,7 +231,12 @@
                 >
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" />
+                <label for="check1"></label>
+                <input
+                  id="check1"
+                  type="checkbox"
+                  class="custom-control-input"
+                />
                 <label class="custom-control-label"
                   >Acepto expresamente la
                   <a href="#">política de protección de datos</a></label
