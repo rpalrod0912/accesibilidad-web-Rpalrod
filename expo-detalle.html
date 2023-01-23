@@ -136,32 +136,31 @@
             </p>
 
             <table class="table table-light">
+              <caption>
+                Obras
+              </caption>
               <thead>
-                <colgroup class="bg-verde-oscuro">
-                  <col span="2"></col>
-
-                </colgroup>
-                <td>Obra mostrada en esta página</td>
-
+                <td colspan="2"></td>
+                <th>Obra mostrada en esta página</th>
               </thead>
               <tbody>
                 <tr>
-                  <td>Título</td>
-                  <td>Las Bailarinas</td>
+                  <th id="title">Título</th>
+                  <td headers="title 1">Las Bailarinas</td>
                 </tr>
                 <tr>
-                  <td>Artista</td>
-                  <td>Edgar Degas</td>
+                  <th id="artist">Artista</th>
+                  <td headers="artist 1">Edgar Degas</td>
                 </tr>
                 <tr>
-                  <td>Técnica</td>
-                  <td>Pastel y carboncillo sobre papel</td>
+                  <th id="tecnica">Técnica</th>
+                  <td headers="tecnica 1">Pastel y carboncillo sobre papel</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                  <td>Dimensiones</td>
-                  <td>71.1 x 59.1 cm</td>
+                  <th id="size">Dimensiones</th>
+                  <td headers="size 1">71.1 x 59.1 cm</td>
                 </tr>
               </tfoot>
             </table>
@@ -195,13 +194,14 @@
             />
           </div>
           <div class="form-group form-check">
-            
             <input
               type="checkbox"
               class="form-check-input"
               id="inputCheckbox"
             />
-            <label for="inputCheckbox">Acepto la <a href="#">Política de privacidad </a></label>
+            <label for="inputCheckbox"
+              >Acepto la <a href="#">Política de privacidad </a></label
+            >
           </div>
           <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
