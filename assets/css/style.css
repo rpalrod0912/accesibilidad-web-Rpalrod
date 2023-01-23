@@ -1,7 +1,14 @@
 /* GENÉRICO */
-
+.expoDetalleh1 {
+  color: #222;
+  background-color: #48c9b0;
+}
+.expoDetalleh2 {
+  background-color: black;
+  color: white;
+}
 .expo-detalle h1 {
-  background-color: #212323;
+  background-color: #48c9b0;
   color: #222;
 }
 .donarH2 {
@@ -188,17 +195,6 @@ main {
   min-height: 400px;
 }
 
-.donar-cabecera h1,
-.detalle-cabecera h1 {
-  color: white;
-  background: #48c9b0;
-}
-
-.detalle-cabecera h2,
-.detalle-cabecera span {
-  color: #fff;
-  width: 100%;
-}
 .detalle-cabecera button {
   margin-top: 10px;
 }
